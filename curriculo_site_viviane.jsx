@@ -14,34 +14,45 @@ export default function Portfolio() {
         </Card>
 
         <div className="grid md:grid-cols-3 gap-4">
-          <Card className="bg-[#112b50] cursor-pointer hover:scale-105 transition">
-            <CardContent className="p-4 flex items-center gap-3">
-              <Phone />
-              <div>
-                <p>(82) 99992-9144</p>
-                <p>(82) 99136-7989</p>
-              </div>
-            </CardContent>
-          </Card>
+          {/* TELEFONE */}
+          <a href="tel:+5582999929144">
+            <Card className="bg-[#112b50] cursor-pointer hover:scale-105 transition">
+              <CardContent className="p-4 flex items-center gap-3">
+                <Phone />
+                <div>
+                  <p>(82) 99992-9144</p>
+                  <p>(82) 99136-7989</p>
+                </div>
+              </CardContent>
+            </Card>
+          </a>
 
-          <Card className="bg-[#112b50] cursor-pointer hover:scale-105 transition">
-            <CardContent className="p-4 flex items-center gap-3">
-              <Mail />
-              <a href="mailto:Barbosa_dapaz@hotmail.com">Enviar Email</a>
-            </CardContent>
-          </Card>
+          {/* EMAIL */}
+          <a href="mailto:Barbosa_dapaz@hotmail.com">
+            <Card className="bg-[#112b50] cursor-pointer hover:scale-105 transition">
+              <CardContent className="p-4 flex items-center gap-3">
+                <Mail />
+                <p>Enviar Email</p>
+              </CardContent>
+            </Card>
+          </a>
 
-          <Card className="bg-[#112b50] cursor-pointer hover:scale-105 transition">
-            <CardContent className="p-4 flex items-center gap-3">
-              <MapPin />
-              <p>Benedito Bentes 1 - AL</p>
-            </CardContent>
-          </Card>
+          {/* LOCALIZAÇÃO */}
+          <a href="https://www.google.com/maps/search/?api=1&query=Benedito+Bentes+1+Alagoas" target="_blank" rel="noopener noreferrer">
+            <Card className="bg-[#112b50] cursor-pointer hover:scale-105 transition">
+              <CardContent className="p-4 flex items-center gap-3">
+                <MapPin />
+                <p>Benedito Bentes 1 - AL</p>
+              </CardContent>
+            </Card>
+          </a>
         </div>
 
         <Card className="bg-[#112b50]">
           <CardContent className="p-6">
-            <h2 className="text-xl font-semibold flex items-center gap-2"><GraduationCap /> Formação</h2>
+            <h2 className="text-xl font-semibold flex items-center gap-2">
+              <GraduationCap /> Formação
+            </h2>
             <ul className="mt-3 list-disc list-inside">
               <li>Técnico em Segurança do Trabalho</li>
               <li>Gestão de RH (Cursando)</li>
@@ -51,7 +62,9 @@ export default function Portfolio() {
 
         <Card className="bg-[#112b50]">
           <CardContent className="p-6">
-            <h2 className="text-xl font-semibold flex items-center gap-2"><Briefcase /> Experiência</h2>
+            <h2 className="text-xl font-semibold flex items-center gap-2">
+              <Briefcase /> Experiência
+            </h2>
             <ul className="mt-3 space-y-2">
               <li>Auxiliar de Facilities - Monitoramento Patrimonial</li>
               <li>Livraria Leitura - Atendimento e estoque</li>
@@ -63,7 +76,9 @@ export default function Portfolio() {
 
         <Card className="bg-[#112b50]">
           <CardContent className="p-6">
-            <h2 className="text-xl font-semibold flex items-center gap-2"><BookOpen /> Cursos</h2>
+            <h2 className="text-xl font-semibold flex items-center gap-2">
+              <BookOpen /> Cursos
+            </h2>
             <ul className="mt-3 list-disc list-inside">
               <li>Recepção</li>
               <li>Telemarketing</li>
